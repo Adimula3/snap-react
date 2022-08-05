@@ -1,0 +1,75 @@
+
+.navbar {
+    padding: 5px;
+}
+.navbar-brand {
+    font-size: 33px;
+    color: black;
+    font-weight: 700;
+    margin-right: 50px;
+}
+.navbar-nav img{
+    margin-right: 10px;
+}
+.nav-item {
+    margin-right: 10px;
+    padding-top: 10px;
+}
+.nav-item .right-nav {
+    justify-content: end;
+    margin-left: 600px;
+}
+.nav-item .box {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100px;
+}
+.nav-link {
+    color: black;
+}
+.nav-link:hover {
+    color: black;
+}
+
+
+.hero h1 {
+    font-size: 70px;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 120px;
+    margin-top: 125px;
+}
+.hero p {
+    text-align: left;
+    margin-left: 120px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+.hero button {
+   margin-right: 280px;
+    margin-top: 30px;
+    color: white;
+    border-radius: 10px;
+    width: 120px;
+    height: 45px;
+}
+.image {
+    margin-top: 50px;
+    margin-right: 80px;
+    width: 400px;
+}
+.logos {
+    margin-top: 80px;
+    margin-left: 120px;
+}
+.images {
+    width: 70px;
+    height: 18px;
+    margin-right: 28px;
+}
+.imagess {
+    width: 70px;
+    height: 28px;
+    margin-right: 28px;
+}
