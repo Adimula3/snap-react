@@ -30,8 +30,11 @@
 .nav-link:hover {
     color: black;
 }
-
-
+#basic-nav-dropdown::after {
+    border-top-width: 0;
+    border-bottom: 4px solid #fff;
+    content: url("../assets/icon-arrow-up.svg");
+}
 .hero h1 {
     font-size: 70px;
     font-weight: 700;
@@ -63,6 +66,9 @@
     margin-top: 80px;
     margin-left: 120px;
 }
+.mobile-logo {
+    display: none;
+}
 .images {
     width: 70px;
     height: 18px;
@@ -72,4 +78,168 @@
     width: 70px;
     height: 28px;
     margin-right: 28px;
+}
+
+
+/* Position and sizing of burger button */
+
+.bm-burger-button {
+    position: fixed;
+    width: 30px;
+    height: 25px;
+    right: 35px;
+    top: 16px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: black;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: black;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 30px;
+    width: 30px;
+    color: black;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: transparent;
+
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background:  white;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+    text-align: left;
+}
+
+.bm-item i {
+    margin: 5px;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.nav-items {
+    margin-top: 20px;
+    text-align: center;
+}
+.nav-item .boxs {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileNav {
+    display: none;
+}
+@media (max-width: 767px) {
+    #navbar {
+        display: none;
+    }
+    .mobileNav {
+        display: flex;
+    }
+    .navbar-nav {
+        display: none;
+    }
+    .navbar-brand {
+        display: none;
+        background: transparent;
+    }
+    NavDropdown.Item {
+        background: #373a47;
+    }
+    #basic-nav-dropdown::after {
+        border-top-width: 0;
+        border-bottom: 4px solid #fff;
+        content: url("../assets/icon-arrow-down.svg");
+    }
+   .hero .row .mediaquery .firstImageQuery{
+        display: none;
+    }
+   .image {
+       display: none;
+   }
+   .mobile-image {
+       margin-top: 30px;
+       height: 350px;
+       width: 420px;
+   }
+   .row {
+       flex-flow: column-reverse;
+   }
+   .hero h1 {
+       text-align: center;
+       font-size: 45px;
+       margin-left: 0;
+       margin-top: 50px;
+   }
+   .hero p {
+       margin-top: 20px;
+       margin-left: 0;
+       text-align: center;
+   }
+    .hero button {
+        text-align: center;
+        margin: auto;
+    }
+    .logos {
+        margin-top: 50px;
+        margin-left: 25px;
+    }
+    .mobile-logo {
+        display: flex;
+        margin-top: 5px;
+    }
+    .images {
+        width: 70px;
+        height: 18px;
+    }
+    .imagess {
+        width: 50px;
+        height: 18px;
+    }
+    br {
+        display: none;
+    }
 }
