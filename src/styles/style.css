@@ -79,7 +79,9 @@
     height: 28px;
     margin-right: 28px;
 }
-
+.mobile-image {
+    display: none;
+}
 
 /* Position and sizing of burger button */
 
